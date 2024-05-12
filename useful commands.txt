@@ -1,0 +1,2 @@
+docker build -t defense .
+docker run -d --restart always defense
