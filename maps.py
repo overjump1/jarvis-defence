@@ -9,15 +9,8 @@ import s2sphere
 def get_tile_provider():
     """returns a tile provider object"""
     return staticmaps.TileProvider(
-            "carto-darknolabels",
-            url_pattern="https://api.mapbox.com/styles/v1/overjump/cloajx0co011o01qm8cb4875v/tiles/256/$z/$x/$y@2x?access_token=sk.eyJ1Ijoib3Zlcmp1bXAiLCJhIjoiY2xvYWtibzFnMGk4cjJxbm5vZ3lvaDlzdCJ9.WdKUjQ5ieHrofIenxtvycw",
-            attribution="Alert designed by Freepik, Powered by Geoapify © OpenStreetMap contributors",
-            max_zoom=20,
-        )
-    return staticmaps.TileProvider(
         "carto-darknolabels",
         url_pattern="https://maps.geoapify.com/v1/tile/dark-matter-brown/$z/$x/$y.png",
-        api_key="14f3673238834226abd424ada440953a",
         attribution="Alert designed by Freepik, Powered by Geoapify © OpenStreetMap contributors",
         max_zoom=20,
     )
